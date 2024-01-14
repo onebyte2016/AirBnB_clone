@@ -5,7 +5,7 @@ Module for the BaseModel class.
 
 import uuid
 from datetime import datetime
-#import models
+import models
 
 class BaseModel:
     def __init__(self, *args, **kwargs):
@@ -21,7 +21,7 @@ class BaseModel:
                     setattr(self, key, datetime.strptime(value, dateformat))
                 else:
                     setattr(self, key, value)
-           #models.storage.new(self)
+           models.storage.new(self)
 
     def __str__(self):
         """
