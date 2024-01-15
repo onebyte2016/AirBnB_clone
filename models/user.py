@@ -9,7 +9,7 @@ class User(BaseModel):
     """
     class User that handles users' information
     """
-    def __init__(self)
+    def __init__(self):
         super().__init__()
         self.email = ""
         self.password = ""
