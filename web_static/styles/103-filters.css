@@ -1,0 +1,137 @@
+.filters {
+  height: 70px;
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+button {
+  font-size: 18px;
+  background-color: #ff5a5f;
+  color: #fff;
+  height: 48px;
+  width: 20%;
+  border: none;
+  border-radius: 4px;
+  margin-right: 30px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.locations {
+  height: 100%;
+  width: 25%;
+  border-right: 1px solid #dddddd;
+}
+
+.container .amenities {
+  height: 100%;
+  width: 25%;
+  margin-right: 270px;
+}
+
+.locations h3,
+.amenities h3 {
+  margin-left: 57px;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.locations h4,
+.amenities h4 {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 0px;
+}
+
+.popover {
+  background-color: #fafafa;
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.locations:hover .popover,
+.amenities:hover .popover {
+  display: block;
+}
+
+.popover ul,
+ul li {
+  list-style-type: none;
+  text-align: left;
+}
+
+.popover h3 {
+  text-align: left;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 667px) {
+  .filters {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .locations h3,
+  .amenities h3 {
+    margin-left: 8px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  button {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .locations,
+  .amenities {
+    width: 80%;
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  .locations h4,
+  .amenities h4 {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .container .amenities {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .amenities:hover .popover {
+    display: block;
+    width: auto;
+    text-align: center;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
