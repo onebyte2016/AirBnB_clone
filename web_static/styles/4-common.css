@@ -5,7 +5,13 @@ body {
   font-size: 14px;
   color: #484848;
 }
+
 .logo {
   margin-left: 20px;
   line-height: 30px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
 }
