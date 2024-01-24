@@ -7,6 +7,7 @@ import uuid
 from datetime import datetime
 import models
 
+
 class BaseModel:
     def __init__(self, *args, **kwargs):
         dateformat = "%Y-%m-%dT%H:%M:%S.%f"
@@ -29,7 +30,8 @@ class BaseModel:
         displaying the class name, id, and the dictionary
         representation of the instance
         """
-        return "[{}] ({}) {}".format(self.__class__.__name__, self.id, self.__dict__)
+        return "[{}] ({}) {}".format(self.__class__.__name__, 
+                self.id, self.__dict__)
 
     def save(self):
         """
